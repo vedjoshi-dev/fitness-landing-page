@@ -1,2 +1,11 @@
-# fitness-landing-page
-Designed and developed a responsive fitness coaching landing page using HTML, CSS, and JavaScript, with a focus on clean UI, performance, and mobile-first design.
+# Fitness Landing Page
+A responsive fitness coaching landing page built using HTML, CSS, and JavaScript. 
+
+## Features
+- Responsive design (mobile-friendly)
+- Clean and modern UI
+- Services and testimonials section
+- Contact form
+
+## Live Demo
+(Will be added after deployment)

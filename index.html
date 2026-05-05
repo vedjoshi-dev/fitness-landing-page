@@ -3,67 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Coaching</title>
-
+  <title>FitCoach — Transform Your Body</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
-  <h2>FitCoach</h2>
+  <div class="nav-logo">FitCoach</div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#testimonials">Results</a></li>
+    <li><a href="#contact" class="nav-cta">Get Started</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Transform Your Body With Expert Coaching</h1>
-  <p>Personalised fitness plans designed for real results</p>
-  <button onclick="scrollToContact()">Get Started</button>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Expert Fitness Coaching</div>
+    <h1>BUILD A <span class="line-accent">STRONGER</span> YOU</h1>
+    <p class="hero-sub">Personalised training plans, expert nutrition guidance, and real accountability — designed to deliver results that actually last.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="scrollToContact()">Start Your Journey</button>
+      <a href="#services" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        See Services
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">200+</div>
+        <div class="stat-label">Clients Coached</div>
+      </div>
+      <div>
+        <div class="stat-num">94%</div>
+        <div class="stat-label">Goal Achievement</div>
+      </div>
+      <div>
+        <div class="stat-num">5yr</div>
+        <div class="stat-label">Experience</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="about">
-  <h2>About</h2>
-  <p>We help individuals achieve their fitness goals through structured programs, expert guidance, and proven results.</p>
+  <div class="about-inner">
+    <div>
+      <div class="section-label">About</div>
+      <h2 class="section-title">COACHING THAT GETS RESULTS</h2>
+      <p class="section-body">We cut through the noise and give you a clear, structured path — whether you want to lose fat, build muscle, or improve your overall health. No cookie-cutter plans. No guesswork.</p>
+    </div>
+    <div class="about-features">
+      <div class="feature-item">
+        <div class="feature-icon">🎯</div>
+        <div>
+          <div class="feature-title">Goal-First Planning</div>
+          <div class="feature-desc">Your programme is built around your specific targets, lifestyle, and timeline.</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📊</div>
+        <div>
+          <div class="feature-title">Progress Tracking</div>
+          <div class="feature-desc">Weekly check-ins and measurable benchmarks to keep you on course.</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">💬</div>
+        <div>
+          <div class="feature-title">Ongoing Support</div>
+          <div class="feature-desc">Direct access whenever you need a form check, advice, or a confidence boost.</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="services">
-  <h2>Services</h2>
-  <div class="cards">
-    <div class="card">Personal Training</div>
-    <div class="card">Diet Plans</div>
-    <div class="card">Online Coaching</div>
+  <div class="section-label">Services</div>
+  <h2 class="section-title">WHAT I OFFER</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-title">Personal Training</div>
+      <div class="service-desc">Hands-on, in-person sessions tailored to your level. Perfect for beginners or those who want direct, real-time coaching.</div>
+      <div class="service-tags">
+        <span class="tag">1-on-1</span>
+        <span class="tag">In-Person</span>
+        <span class="tag">All Levels</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-title">Nutrition Plans</div>
+      <div class="service-desc">Custom diet strategies built around your goals — not generic calorie counts. Learn to eat in a way that's sustainable long-term.</div>
+      <div class="service-tags">
+        <span class="tag">Customised</span>
+        <span class="tag">Flexible</span>
+        <span class="tag">Sustainable</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-title">Online Coaching</div>
+      <div class="service-desc">Full coaching experience delivered remotely. Train anywhere with a programme that evolves weekly based on your data and feedback.</div>
+      <div class="service-tags">
+        <span class="tag">Remote</span>
+        <span class="tag">App-Based</span>
+        <span class="tag">Check-Ins</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials">
-  <h2>Testimonials</h2>
-  <div class="cards">
-    <div class="card">"Lost 10kg in 3 months!"</div>
-    <div class="card">"Best coach I've worked with."</div>
-    <div class="card">"Highly recommend!"</div>
+<section id="testimonials" class="testimonials">
+  <div class="testimonials-header">
+    <div>
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">REAL RESULTS</h2>
+    </div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="tcard">
+      <div class="tcard-quote">"</div>
+      <p class="tcard-text">Lost 10kg in 3 months while actually enjoying the process. The nutrition plan was a game changer — I never felt deprived.</p>
+      <div class="tcard-meta">
+        <div class="tcard-avatar">SJ</div>
+        <div>
+          <div class="tcard-name">Sarah J.</div>
+          <div class="tcard-result">↓ 10kg in 12 weeks</div>
+        </div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-quote">"</div>
+      <p class="tcard-text">Best investment I've made in myself. The programming is smart, the coaching is sharp, and the results speak for themselves.</p>
+      <div class="tcard-meta">
+        <div class="tcard-avatar">MT</div>
+        <div>
+          <div class="tcard-name">Marcus T.</div>
+          <div class="tcard-result">↑ 8kg lean muscle</div>
+        </div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-quote">"</div>
+      <p class="tcard-text">I'd tried other coaches before but never stuck with it. This time the accountability made all the difference. Highly recommend.</p>
+      <div class="tcard-meta">
+        <div class="tcard-avatar">AL</div>
+        <div>
+          <div class="tcard-name">Amara L.</div>
+          <div class="tcard-result">6 month transformation</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <form id="contactForm">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p id="successMsg"></p>
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">LET'S GET TO WORK</h2>
+      <p class="section-body">Ready to make a change? Fill in the form and I'll be in touch within 24 hours to discuss your goals and how we can achieve them together.</p>
+      <div class="contact-detail">
+        <span class="contact-icon">📍</span> London, United Kingdom
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">📧</span> vedjoshi45@gmail.com
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">📱</span> +44 7700 000000
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Alex" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label>I'm Interested In</label>
+          <select>
+            <option value="">Select a service…</option>
+            <option>Personal Training</option>
+            <option>Nutrition Plan</option>
+            <option>Online Coaching</option>
+            <option>All of the above</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your goals…" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message →</button>
+        <p id="successMsg"></p>
+      </form>
+    </div>
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">FitCoach</div>
+  <div>© 2025 FitCoach. All rights reserved.</div>
+  <div>Built as a portfolio example</div>
+</footer>
 
 <script src="script.js"></script>
 </body>
